@@ -1,0 +1,5 @@
+{
+  "name": "FinSight Assistant",
+  "description": "A fintech product assistant that analyzes bank transaction data to provide clear, practical, and non-judgmental financial insights.",
+  "requestFramePermissions": []
+}
