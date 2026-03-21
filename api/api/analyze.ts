@@ -1,4 +1,4 @@
-import { GoogleGenerativeAI } from "@google/genai";
+import { GoogleGenAI } from "@google/genai";
 
 export default async function handler(req: any, res: any) {
   if (req.method !== "POST") {
@@ -8,22 +8,22 @@ export default async function handler(req: any, res: any) {
   try {
     const { transactions } = req.body;
 
-    const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY!);
-
-    const model = genAI.getGenerativeModel({
-      model: "gemini-1.5-flash",
+    const ai = new GoogleGenAI({
+      apiKey: process.env.GEMINI_API_KEY!,
     });
 
     const prompt = `
-    Analyze these transactions and give clear financial insights:
-    ${JSON.stringify(transactions)}
-    `;
+Analyze these transactions and give clear financial insights:
+${JSON.stringify(transactions)}
+`;
 
-    const result = await model.generateContent(prompt);
-    const response = await result.response;
+    const response = await ai.models.generateContent({
+      model: "gemini-1.5-flash",
+      contents: prompt,
+    });
 
     return res.status(200).json({
-      text: response.text(),
+      text: response.text,
     });
   } catch (err) {
     console.error(err);
