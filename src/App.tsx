@@ -342,7 +342,7 @@ ${spendingData}`;
             <div className="bg-indigo-600 p-2 rounded-xl group-hover:rotate-12 transition-transform">
               <BrainCircuit className="text-white w-5 h-5" />
             </div>
-            <span className="text-xl font-bold tracking-tight">FinType</span>
+            <span className="text-xl font-bold tracking-tight">FinSight</span>
           </div>
           
           <div className="hidden md:flex items-center gap-8">
@@ -378,7 +378,7 @@ ${spendingData}`;
               What's your <span className="text-indigo-600">money personality</span>?
             </h1>
             <p className="text-xl text-black/50 leading-relaxed max-w-lg">
-              FinType uses behavioral psychology and AI to decode your spending habits. Discover your financial archetype and master your money.
+              FinSight uses behavioral psychology and AI to decode your spending habits. Discover your financial archetype and master your money.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <button 
@@ -483,7 +483,7 @@ ${spendingData}`;
               <div className="space-y-8">
                 {[
                   { step: "01", title: "Copy your transactions", desc: "Export your monthly summary from your bank app or just copy the text." },
-                  { step: "02", title: "Paste into FinType", desc: "Our AI engine reads through the noise to find the patterns that matter." },
+                  { step: "02", title: "Paste into FinSight", desc: "Our AI engine reads through the noise to find the patterns that matter." },
                   { step: "03", title: "Get your game plan", desc: "Receive a supportive, non-judgmental analysis with clear savings goals." }
                 ].map((item, i) => (
                   <div key={i} className="flex gap-6">
@@ -829,7 +829,7 @@ ${spendingData}`;
         <div className="max-w-4xl mx-auto bg-indigo-600 rounded-[40px] p-12 lg:p-20 text-center space-y-8 relative overflow-hidden">
           <div className="relative z-10 space-y-6">
             <h2 className="text-4xl lg:text-5xl font-bold text-white tracking-tight">Ready to meet your financial self?</h2>
-            <p className="text-white/80 text-lg max-w-xl mx-auto">Join thousands of users who are discovering their financial personality with FinType.</p>
+            <p className="text-white/80 text-lg max-w-xl mx-auto">Join thousands of users who are discovering their financial personality with FinSight.</p>
             <button 
               onClick={scrollToTool}
               className="px-8 py-4 bg-white text-indigo-600 rounded-2xl font-bold hover:bg-indigo-50 transition-all shadow-xl shadow-indigo-900/10 active:scale-95"
@@ -851,7 +851,7 @@ ${spendingData}`;
               <div className="bg-indigo-600 p-2 rounded-xl">
                 <BrainCircuit className="text-white w-5 h-5" />
               </div>
-              <span className="text-xl font-bold tracking-tight">FinType</span>
+              <span className="text-xl font-bold tracking-tight">FinSight</span>
             </div>
             <p className="text-black/40 text-sm leading-relaxed">
               Decoding financial behavior through AI and psychology. Built for hackathons, designed for real life.
@@ -899,7 +899,7 @@ ${spendingData}`;
         </div>
         <div className="max-w-7xl mx-auto mt-20 pt-8 border-t border-black/5 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-xs text-black/30 font-medium uppercase tracking-widest">
-            &copy; 2026 FinType &bull; All rights reserved.
+            &copy; 2026 FinSight &bull; All rights reserved.
           </p>
           <div className="flex items-center gap-6 text-xs text-black/30 font-medium uppercase tracking-widest">
             <span className="hover:text-black cursor-pointer transition-colors">Terms</span>
