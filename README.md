@@ -1,4 +1,4 @@
-# 💰 FinSight Assistant
+# 💰 FinSight
 
 AI-powered fintech assistant that analyzes transaction data and provides **clear, actionable, and non-judgmental financial insights**.
 
